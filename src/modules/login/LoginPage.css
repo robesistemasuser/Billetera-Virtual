@@ -1,0 +1,111 @@
+/* src/components/containers/LoginPage.css */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4; /* Color de fondo suave */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía moderna */
+  padding: 20px; /* Espaciado interno */
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2rem; /* Tamaño de fuente más grande */
+  text-align: center; /* Alinear el texto al centro */
+}
+
+/* Estilos del formulario de login */
+.login-form {
+  background-color: #fff;
+  padding: 30px; /* Aumentar el padding para un aspecto más espacioso */
+  border-radius: 12px; /* Bordes redondeados más pronunciados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+  width: 100%; /* Asegurarse de que sea responsivo */
+  max-width: 400px; /* Limitar el ancho máximo */
+  transition: transform 0.2s; /* Transición para efectos */
+}
+
+/* Efecto de hover en el formulario */
+.login-form:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Espaciado entre los grupos de formulario */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold; /* Hacer el texto más prominente */
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Ancho completo */
+  padding: 12px; /* Espaciado interno */
+  border: 1px solid #ddd;
+  border-radius: 6px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente mayor */
+  transition: border-color 0.3s ease; /* Transición suave */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff; /* Color de borde al enfocar */
+  outline: none; /* Sin contorno */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra de enfoque */
+}
+
+.login-button {
+  width: 100%; /* Ancho completo */
+  padding: 12px; /* Espaciado interno */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none;
+  border-radius: 6px; /* Bordes redondeados */
+  font-size: 18px; /* Tamaño de fuente mayor */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones */
+}
+
+/* Efecto de hover en el botón de login */
+.login-button:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.register-link {
+  margin-top: 15px; /* Espaciado superior */
+  text-align: center; /* Alinear el texto al centro */
+}
+
+.register-link a {
+  color: #007bff; /* Color del enlace */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Hacer el texto más prominente */
+}
+
+.register-link a:hover {
+  text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+/* Responsividad */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+  }
+
+  .login-form {
+    width: 90%; /* Ancho más ajustado en pantallas pequeñas */
+  }
+
+  .login-button {
+    font-size: 16px; /* Ajustar tamaño de fuente del botón */
+  }
+}

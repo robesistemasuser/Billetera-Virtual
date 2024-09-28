@@ -1,0 +1,58 @@
+/* Estilos para el formulario de cliente */
+.create-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    width: 100%;
+    max-width: 400px; /* Limitar el ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Estilos para los campos de entrada */
+  .create-form input {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 10px;
+    margin: 10px 0; /* Espaciado vertical entre los campos */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: border-color 0.3s; /* Transición suave */
+  }
+  
+  /* Efecto al enfocar los campos de entrada */
+  .create-form input:focus {
+    border-color: #007bff; /* Color de borde al enfocar */
+    outline: none; /* Sin contorno */
+  }
+  
+  /* Estilos para el botón */
+  .create-form button {
+    padding: 10px 15px; /* Espaciado interno */
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar */
+    transition: background-color 0.3s; /* Transición suave */
+    width: 100%; /* Botón ocupa todo el ancho del formulario */
+  }
+  
+  /* Efecto al pasar el mouse sobre el botón */
+  .create-form button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar */
+  }
+  
+  /* Mensaje de carga */
+  .loading-message {
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 10px; /* Espaciado inferior */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #666; /* Color gris */
+  }
+  
